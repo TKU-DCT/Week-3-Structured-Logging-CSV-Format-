@@ -1,10 +1,25 @@
 import psutil
+from datetime import datetime
+import csv
+import os
 
-def main():
-    print("Week 1 – System Info Monitor")
-    print(f"CPU Usage: {psutil.cpu_percent(interval=1)}%")
-    print(f"Memory Usage: {psutil.virtual_memory().percent}%")
-    print(f"Disk Usage: {psutil.disk_usage('/').percent}%")
+def get_system_info():
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    
+    # TODO: Use psutil to get CPU, memory, and disk usage
+    cpu = 
+    memory = 
+    disk = 
+    
+    return [now, cpu, memory, disk]
+
+def write_log(data):
+    # TODO: Check if log.csv exists
+    # If not, create it and write a header row
+    # Then append the current data row
+    pass
 
 if __name__ == "__main__":
-    main()
+    row = get_system_info()
+    write_log(row)
+    print("Logged:", row)

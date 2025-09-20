@@ -1,23 +1,20 @@
-# Week 1 Starter: System Info Monitor
+# Week 3 – Structured Logging (CSV Format)
 
-Welcome to the first assignment in *Data Center Technologies 2025 Fall*.
+## Objective
 
-## Instructions
+Modify your logging system to save data into a CSV file format with the following columns:
 
-1. Accept the assignment link from GitHub Classroom.
-2. Open the repository in Codespaces (when available), or clone locally.
-3. In `main.py`, use the `psutil` library to print:
-   - CPU usage
-   - Memory usage
-   - Disk usage
-4. Make at least one `git commit` and `git push` after making your changes.
-5. Submit the assignment (just push is enough; I’ll check the repo).
+- Timestamp
+- CPU usage
+- Memory usage
+- Disk usage
 
-## Setup
+Use Python's built-in `csv` module to write data.
 
-- The `requirements.txt` file includes `psutil` as the only dependency.
-- Use the default Python environment in Codespaces or local.
-- You can run the script with:
+## Tasks
 
-```bash
-python main.py
+- Create `log.csv` if it doesn't exist
+- Add a header row: `Timestamp, CPU, Memory, Disk`
+- Append one row each time the script is run
+
+## Example Output (log.csv)
